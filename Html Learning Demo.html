@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <!-- "zh-CN", 说明是一个中文网站, 用en说明是一个英文网站, 全局生效有时候乱码是因为这个原因导致-->
 <header>
+    <!-- content定义与 http-equiv 或 name 属性相关的元信息-->
     <!-- http-equiv相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容 -->
     <meta http-equiv="expires"content="Fri,12Jan200118:18:18GMT"><!-- 必须使用GMT的时间格式 -->
     <!-- 访问者将无法脱机浏览, 禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出 -->
@@ -17,7 +18,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8"><!-- 定义文档的字符编码-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="keyword定义文档关键词，用于搜索引擎,关键字1,关键字2,关键字3"><!-- content定义与 http-equiv 或 name 属性相关的元信息-->
+    <!-- keyword定义文档关键词，用于搜索引擎 -->
+    <meta name="keyword" content="关键字1,关键字2,关键字3">
     <meta name="description" content="description定义web页面描述">
     <meta name="author" content="author定义页面作者">
     <meta name="robots" content="all">
@@ -44,5 +46,26 @@
     <h6>具体效果刷新见.</h6>
     <!-- 文本在一个段落中会根据浏览器的宽度, 自动换行, 段落与段落之间有空行 -->
     <p>这是一个段落</p>
+    <!-- br是break的缩写, 是单标签,不需要成对出现, 和段落不一样, 段落之间会插入一些垂直的间距, 换行则不会插入垂直间距 -->
+    我要强制<br/>换行<br/>
+    <p>
+        <!-- 以下是文本格式标签 -->
+        <strong>我是粗体,Strong标签</strong><br/>
+        <b>我是粗体,b标签</b><br/>
+        <em>我是斜体,em标签</em><br/><!-- emphasis斜体的意思 -->
+        <i>我是斜体,i标签</i><br/>
+        <del>我是删除线,del标签</del><br/>
+        <s>我是删除线,s标签</s><br/>
+        <ins>我是下划线,ins标签</ins><br/>
+        <u>我是下划线,u标签</u>
+    </p>
+    <p>
+        <!-- 以下是布局标签 -->
+        <div>我是一个div, 用来布局, 我一个人单独占一行, 是一个大盒子 </div>123<!-- div是division的缩写, 表示分割, 分区 -->
+        <div>我是一个div, 用来布局, 我一个人单独占一行, 是一个大盒子 </div>123<br/>
+        <span>我是第一个span</span><!-- span是跨度, 跨距的意思, 一行可以放多个span, 小盒子 -->
+        <span>我是第二个span</span>
+        <span>我是第三个span</span>
+    </p>
 </body>
 </html>
