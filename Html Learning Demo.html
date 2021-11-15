@@ -10,7 +10,7 @@
     <!-- 其中的600是指停留600秒钟后自动刷新到URL网址 -->
     <meta http-equiv="Refresh"content="600;URL=http://www.baidu.com">
     <!-- 如果网页过期，那么存盘的cookie将被删除 必须使用GMT的时间格式 -->
-    <meta http-equiv="Set-Cookie"content="cookie value=xxx;expires=Friday,12-Jan-200118:18:18GMT；path=/">
+    <meta http-equiv="Set-Cookie"content="cookie value=xxx;expires=Friday,12-Jan-200118:18:18GMT;path=/">
     <!-- 强制页面在当前窗口中以独立页面显示，可以防止自己的网页被别人当作一个frame页调用 -->
     <meta http-equiv="windows-Target" contect="_top">
     <!-- meta 元数据（Metadata）是数据的数据信息, 元数据不会显示在客户端，但是会被浏览器解析, 是对网页的描述-->
@@ -45,7 +45,7 @@
     <h5>语法规范书写后,</h5>
     <h6>具体效果刷新见.</h6>
     <!-- 文本在一个段落中会根据浏览器的宽度, 自动换行, 段落与段落之间有空行 -->
-    <p>这是一个段落</p>
+    <a href="#anchor"><p id=top>这是一个有锚点的段落</p></a>
     <!-- br是break的缩写, 是单标签,不需要成对出现, 和段落不一样, 段落之间会插入一些垂直的间距, 换行则不会插入垂直间距 -->
     我要强制<br/>换行<br/>
     <p>
@@ -80,7 +80,30 @@
         <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" width="500">
         <!-- border是图像的变宽像素 -->
         <h4>height, 图像高度</h4>
-        <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" height="100" border="20">
+        <a href="https://www.baidu.com" target="_blank">
+            <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" height="100" border="20">
+        </a>
+    </p>
+    <p>
+        <!-- 以下是链接标签 -->
+        <!-- 超链接, 从一个页面跳转到另一个页面 a是anchor,锚的意思, href 必填属性表明链接的地址-->
+        <!-- target 有两个属性值, _self ,_blank self是默认属性值 -->
+        <a href="https://www.baidu.com" target="_self">这是一个_self的超链接, 覆盖当前页面跳转, _self是默认跳转方式</a><br/>
+        <a href="https://www.baidu.com" target="_blank">这是一个_blank的超链接, 打开一个新标签页面跳转</a>
+        <!-- 链接的分类 -->
+        <!-- 1. 外部链接: https://www.baidu.com ,必须加上http协议-->
+        <!-- 2. 内部链接: 相对路径的html页面, 不需要加http协议开头 -->
+        <!-- 3. 空连接: 在href中写#即可 -->
+        <!-- 4. 下载链接: href地址是一个文件或者压缩包, 会下载这个文件-->
+        <!-- 5. 元素链接: 将一个元素标签嵌套在a标签之内, 并且写上href属性即可-->
+        <!-- 6. 锚点链接: 点击链接, 可以快速定位到页面的某个位置, 目标的id属性值是锚点的value, 起锚的地方href的值是#加上id的value -->
+        <a href="#top"><h4 id=anchor>这是一个内部的锚点</h4></a>
+    </p>
+    <p>
+        <!-- 特殊字符 &nbsp;是空格, &lt;是less than的缩写是小于号, &gt;是greater than的缩写是大于号 -->
+        <h4>空格的代号符是&nbsp;</h4>
+        <h4>大于号的代号符是&gt;</h4>
+        <h4>小于号的代号符是&lt;</h4>
     </p>
 </body>
 </html>
