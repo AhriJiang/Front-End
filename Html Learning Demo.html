@@ -160,5 +160,28 @@
             <dd>小红书</dd>            
         </dl>
     </p>
+    <p>
+        <!-- 表单标签, 表单是用于收集用户信息, 三部分组成: 表单域, 表单控件(表单元素), 提示信息-->
+        <!-- form 表单域标签, 包含表单元素的区域, 用于收集和传递表单信息, 提交给服务器 -->
+        <!-- action 定义接收并处理表单数据的服务器url地址, method 定义提交方式 枚举值 get/post, name 定义表单域名称 -->
+        <form action="https://www.baidu.com" method="post" name="表单域名称">
+            <!-- input输入标签 单标签 type 定义控件类型, 枚举值有许多 -->
+            <!-- name定义input元素的名称 单选多选的标签必须name相同 value定义input元素传输到后台的值 -->
+
+            <!-- type=text 单行输入字段, 输入文本, 默认宽度是20字符长度 -->
+            用户名:<input type="text" name="username" value="请输入用户名" maxlength="5" minlength="1"><br>
+            <!-- type=password 专门用于输入密码的输入框类型 -->
+            密码:<input type="password" name="password" maxlength="10"><br>
+            <!-- type=radio 单选按钮类型, 用户多选一的选择 单选多选的标签必须name相同 -->
+            <!-- checked定义input元素首次加载时应该被选中(标签默认是unchecked) -->
+            性别: 男<input type="radio" name="sex" value="male" checked="checked">女<input type="radio" name="sex" value="female"><br>
+            <!-- type=checkbox 复选按钮类型, 用于多选的输入类型 -->
+            爱好: 吃饭<input type="checkbox" name="hobby" value="eat">睡觉<input type="checkbox" name="hobby" value="sleep">打牌<input type="checkbox" name="hobby" value="card">
+            <!-- select下拉选择标签 -->
+            <select name="" id=""></select>
+            <!-- textarea文本域标签 -->
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+    </p>
 </body>
 </html>
