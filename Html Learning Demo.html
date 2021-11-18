@@ -185,8 +185,6 @@
             <input type="button" name="assert_mobile" value="获取短信验证码"><br>
             <!-- type=file, 上传文件给服务器 -->
             上传文件: <input type="file"><br>
-            <!-- type=submit, value的值可以显示在空间按钮上, 表单form的数据的value会提交到服务器action指向的服务上 -->
-            <input type="submit" name="submit" value="免费注册"><br>
             <!-- select下拉选择标签 至少包含1个option选项 -->
             <label for="city">城市:</label>
             <select name="city" id="city">
@@ -199,7 +197,8 @@
             <label for="inroduction">自我介绍:</label>
             <!-- cols和rows实际开发中通过css来控制实现 -->
             <textarea name="self_introduction" id="inroduction" cols="45" rows="5">这个功能是textarea来实现的, 这里是默认填写的</textarea><br>
-            <!-- type=reset, 重置表单form的数据为默认值初始化 -->
+            <!-- type=submit, value的值可以显示在空间按钮上, 表单form的数据的value会提交到服务器action指向的服务上 -->
+            <input type="submit" name="submit" value="免费注册"><!-- type=reset, 重置表单form的数据为默认值初始化 -->
             <input type="reset" name="reset" value="重新填写"><br>
         </form>
     </p>
