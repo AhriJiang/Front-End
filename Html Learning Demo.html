@@ -174,13 +174,33 @@
             密码:<input type="password" name="password" maxlength="10"><br>
             <!-- type=radio 单选按钮类型, 用户多选一的选择 单选多选的标签必须name相同 -->
             <!-- checked定义input元素首次加载时应该被选中(标签默认是unchecked) -->
-            性别: 男<input type="radio" name="sex" value="male" checked="checked">女<input type="radio" name="sex" value="female"><br>
+            <!-- label标签, 用于当鼠标点击绑定label标签的表单元素时候, 增加鼠标可选择的点击范围, 提高用户体验 -->
+            <!-- 如下例子, 点击男的时候就可以选中radio标签了, 而不用特意点击到那个radio圈圈 -->
+            性别: <label for="male_sex">男</label><input type="radio" name="sex" value="male" checked="checked" id="male_sex">&nbsp;&nbsp;&nbsp;
+            <label for="femail_sex">女</label><input type="radio" name="sex" value="female" id="femail_sex"><br>
             <!-- type=checkbox 复选按钮类型, 用于多选的输入类型 -->
-            爱好: 吃饭<input type="checkbox" name="hobby" value="eat">睡觉<input type="checkbox" name="hobby" value="sleep">打牌<input type="checkbox" name="hobby" value="card">
-            <!-- select下拉选择标签 -->
-            <select name="" id=""></select>
-            <!-- textarea文本域标签 -->
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            爱好: 吃饭<input type="checkbox" name="hobby" value="eat">睡觉<input type="checkbox" name="hobby" value="sleep">打牌<input type="checkbox" name="hobby" value="card"><br>
+            手机: <input type="text" name="mobile" value="请输入手机号" maxlength="11"><br>
+            <!-- type=button, 普通功能按钮, 一般结合JavaScript搭配使用 -->
+            <input type="button" name="assert_mobile" value="获取短信验证码"><br>
+            <!-- type=file, 上传文件给服务器 -->
+            上传文件: <input type="file"><br>
+            <!-- type=submit, value的值可以显示在空间按钮上, 表单form的数据的value会提交到服务器action指向的服务上 -->
+            <input type="submit" name="submit" value="免费注册"><br>
+            <!-- select下拉选择标签 至少包含1个option选项 -->
+            <label for="city">城市:</label>
+            <select name="city" id="city">
+                <!-- option的选项可以设置selected属性, 作为默认选中的option, 下面案例默认选择重庆 -->
+                <option value="shanghai">上海</option>
+                <option value="beijing">北京</option>
+                <option value="chongqing" selected="selected">重庆</option>
+            </select><br>
+            <!-- textarea文本域标签 用于输入大段多行文字, 常用语评论, 留言等 -->
+            <label for="inroduction">自我介绍:</label>
+            <!-- cols和rows实际开发中通过css来控制实现 -->
+            <textarea name="self_introduction" id="inroduction" cols="45" rows="5">这个功能是textarea来实现的, 这里是默认填写的</textarea><br>
+            <!-- type=reset, 重置表单form的数据为默认值初始化 -->
+            <input type="reset" name="reset" value="重新填写"><br>
         </form>
     </p>
 </body>
