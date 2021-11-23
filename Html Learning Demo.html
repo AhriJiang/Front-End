@@ -49,12 +49,30 @@
             color: rgba(169, 45, 207, 0.795) ;
             font-size: larger;
         }
+        /* 选择器分成两类, 基础选择器和复合选择器
+            基础选择器
+                标签选择器
+                类选择器
+                id选择器
+                通配符选择器
+            复合选择器 */
+        /* 标签选择器, 下列是p标签的选择器, 把某一类标签全部选择出来, 快速为页面中同类型的标签统一设置样式*/
+        p {
+            color: rgba(169, 45, 207, 0.795) ;
+            font-size: larger;
+        }
+        /* 类选择器, 样式点定义, 结构class调用, 一个或多个 开发最常用 */
+        /* 调用这个red的class都会调用到这个css样式 */
+        .red {
+            color: red;
+        }
+
     </style>
 </header>
 <body>
     <!-- 1~6, 1的字体大, 标题层级高 -->
-    <h1>Try not lose job</h1>
-    <h1>标题一共六级选,</h1>
+    <h1 class="red">Try not lose job</h1>
+    <h1 class="red">标题一共六级选,</h1>
     <h2>文字加粗一行显.</h2>
     <h3>由大到小依次减,</h3>
     <h4>从重到轻随之变.</h4>
@@ -66,7 +84,7 @@
     我要强制<br/>换行<br/>
     <p>
         <!-- 以下是文本格式标签 -->
-        <strong>我是粗体,Strong标签</strong><br/>
+        <strong class="red">我是粗体,Strong标签</strong><br/>
         <b>我是粗体,b标签</b><br/>
         <em>我是斜体,em标签</em><br/><!-- emphasis斜体的意思 -->
         <i>我是斜体,i标签</i><br/>
