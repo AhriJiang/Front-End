@@ -262,7 +262,45 @@
         <h5>按照字母顺序</h5>
         <!-- abbr标签用来给缩写的文字添加标注(abbrabbreviation的缩写), 当鼠标移动上去时候就可以显示备注功能 -->
         <!-- 兼容性: abbr在IE6,以及IE6之前的版本无法使用, 如需要必须用acronym标签 -->
-        <h6>The <abbr title="People's Republic of China">PRC</abbr> was founded in 1949.</h6>
+        <h6>The 
+            <abbr title="People's Republic of China">PRC</abbr> 
+            was founded in 1949.
+        </h6>
+        <!-- address标签用来定义文档或文章的作者/拥有者的联系信息, 元素中的文本通常呈现为斜体 -->
+        <!-- 兼容性: 全兼容 -->
+        <h6><address>
+            Written by <a href="mailto:lucifer.seraphim@hotmail.com"> Ahri Jiang</a>.<br> 
+            Visit us at:<br>
+            Example.com<br>
+            Yunshan 1039, Shanghai<br>
+            China
+            </address>
+        </h6>
+        <!-- article标签代表文档, 页面或者应用程序中与上下文不相关的独立部分, 经常被用于定义一篇日志、一条新闻或用户评论等 -->
+        <!-- 通常使用多个section元素进行划分, 一个页面中article元素可以出现多次 -->
+        <!-- 兼容性: IE 8 以及更早的版本不支持article标签 -->
+        <h6>
+            <article>
+                <header>
+                    <h2>第一章</h2>
+            　　</header>
+            　　<section>
+                    <header>
+                        <h2>第1节</h2>
+                    </header>
+                </section>
+                <section>
+                    <header>
+                        <h2>第2节</h2>
+                    </header>
+                </section>
+            </article>
+            <article>
+                <header>
+                    <h2>第二章</h2>
+                </header>
+            </article>
+        </h6>
     </p>
 </body>
 </html>
