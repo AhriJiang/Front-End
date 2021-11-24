@@ -63,8 +63,36 @@
         }
         /* 类选择器, 样式点定义, 结构class调用, 一个或多个 开发最常用 */
         /* 调用这个red的class都会调用到这个css样式 */
+        /* 实际开发中, 最佳实践是将相同的样式放在一个样式盒里面,方便统一修改 */
         .red {
             color: red;
+        }
+        .purple {
+            color: purple;
+        }
+        .font_10{
+            font-size: 10px;
+        }
+        /* id选择器, 用标签内的id来定位, 以#开头, id调用在每个html中只能出现一次, 别人不能使用 */
+        #id_locator {
+            color: royalblue;
+        }
+        /* 通配符选择器, 选取页面中所有元素标签, *即可 通配符有特殊用法 */
+        /* * {
+            font-size: 10px;
+        } */
+
+        /* 通常字体统一, 可以在body标签配置 */
+        body {
+            /* font-family定义文字的字体系列, 字体之间用逗号隔开, 字体中间有空格用''引用起来, 可以多写几个便于兼容 */
+            font-family: 'Microsoft Yahei', Arial; 
+            /* font-size定义字体的大小, px为像素单位 */
+            /* 标题标签比较特殊, 需要单独设置文字大小 */
+            font-size: 16px; 
+            /* font-weight定义文字的粗细, 通常用100~900表示 */
+            font-weight: 100;
+            /* font-style定义字体样式, 通常让倾斜的字体变不倾斜 italic表示倾斜 */
+            font-style: normal;
         }
 
     </style>
@@ -73,9 +101,10 @@
     <!-- 1~6, 1的字体大, 标题层级高 -->
     <h1 class="red">Try not lose job</h1>
     <h1 class="red">标题一共六级选,</h1>
-    <h2>文字加粗一行显.</h2>
-    <h3>由大到小依次减,</h3>
-    <h4>从重到轻随之变.</h4>
+    <!-- 一个标签可以有多类名, 选择器定位的时候会匹配上多个类名的css样式 多个类名之间必须用空格隔开 -->
+    <h2 class="purple font_10">文字加粗一行显.</h2>
+    <h3 id="id_locator">由大到小依次减,</h3>
+    <h4 class="font_family">从重到轻随之变.</h4>
     <h5>语法规范书写后,</h5>
     <h6>具体效果刷新见.</h6>
     <!-- 文本在一个段落中会根据浏览器的宽度, 自动换行, 段落与段落之间有空行 -->
@@ -278,7 +307,7 @@
     <p>
         <h4>开始自学基础标签之外的标签</h4>
         <h5>按照字母顺序</h5>
-        <!-- abbr标签用来给缩写的文字添加标注(abbrabbreviation的缩写), 当鼠标移动上去时候就可以显示备注功能 -->
+        <!-- abbr标签用来给缩写的文字添加标注(abbreviation的缩写), 当鼠标移动上去时候就可以显示备注功能 -->
         <!-- 兼容性: abbr在IE6,以及IE6之前的版本无法使用, 如需要必须用acronym标签 -->
         <h6>The 
             <abbr title="People's Republic of China">PRC</abbr> 
