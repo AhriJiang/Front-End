@@ -324,30 +324,49 @@
             </address>
         </h6>
         <!-- article标签代表文档, 页面或者应用程序中与上下文不相关的独立部分, 经常被用于定义一篇日志、一条新闻或用户评论等 -->
+        <!-- article=<div id="article"> article就是div的特用形态, 具有语义的布局分块 -->
         <!-- 通常使用多个section元素进行划分, 一个页面中article元素可以出现多次 -->
         <!-- 兼容性: IE 8 以及更早的版本不支持article标签 -->
-        <h6>
-            <article>
+        <article>
+            <header>
+                <h2>第一章</h2>
+        　　</header>
+            <!-- aside=<div id="aside"> aside也是div的特用形态, 具有语义的布局分块 -->
+            <!-- aside被包含在article元素中作为主要内容的附属信息部分 -->
+            <!-- 兼容性: IE 8 以及更早的版本不支持article标签 -->
+            <aside>这里是第一张的补充说明</aside>
+        　　<section>
                 <header>
-                    <h2>第一章</h2>
-            　　</header>
-            　　<section>
-                    <header>
-                        <h2>第1节</h2>
-                    </header>
-                </section>
-                <section>
-                    <header>
-                        <h2>第2节</h2>
-                    </header>
-                </section>
-            </article>
-            <article>
-                <header>
-                    <h2>第二章</h2>
+                    <h2>第1节</h2>
                 </header>
-            </article>
-        </h6>
+            </section>
+            <section>
+                <header>
+                    <h2>第2节</h2>
+                </header>
+            </section>
+        </article>
+        <article>
+            <header>
+                <h2>第二章</h2>
+            </header>
+        </article>
+        <!-- aside被包含在article之外使用作为页面或站点全局的附属信息部分 -->
+        <!-- 最典型的是侧边栏 -->
+        <!-- 兼容性: IE 8 以及更早的版本不支持article标签 -->
+        <aside>
+            <h2>这还是PHP中文网</h2>
+            <ul>
+              <li>一个学编程必备的网站</li>
+              <li>一个很活跃的网站</li>
+            </ul>
+            <h2>PHP中文网</h2>
+            <ul>
+              <li>欢迎你的到来</li>
+              <li>想学什么编程都可以来</li>
+            </ul>
+        </aside>
+        <!-- <applet>applet是一种定义嵌入的object标签, 不推荐使用</applet> 推荐用object代替 -->
     </p>
 </body>
 </html>
