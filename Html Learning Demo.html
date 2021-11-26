@@ -409,6 +409,21 @@
             <area shape="rect" coords="0,0,110,260" href ="https://www.w3school.com.cn/example/html/sun.html" target ="_blank" alt="Sun" />
         </map>
         <h4>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</h4>
+        <!-- audio标签, 定义声音，比如音乐或其他音频流 -->
+        <!-- 兼容性: IE 8 以及更早的版本不支持 <audio> 标签 -->
+        <!-- autoplay定义是否页面加载时候自动播放, autoplay会覆盖preload标签的预加载(音频在页面加载时进行加载，并预备播放)
+             loop定义是否重复循环播放
+             controls定义是否展示播放控件 -->
+        <!-- autoplay="autoplay" loop="loop" -->
+        <audio src="https://www.w3school.com.cn/i/horse.ogg" controls="controls" >
+            这是一段音频播放
+        </audio><br>
+        <!-- video标签, 定义视频或其他视频流 -->
+        <!-- video相比audio多了几个参数, height, width, poster, 其中poster定义了用户点击播放按钮前显示的图像 -->
+        <!-- 兼容性: IE 8 以及更早的版本不支持 <audio> 标签 -->
+        <video src="https://www.w3school.com.cn/i/movie.ogg" controls="controls">
+            这是一段视频播放
+        </video>
     </p>
 </body>
 </html>
