@@ -35,6 +35,13 @@
     <meta name="revisit-after" content="7days">
     <title>First Web</title>
     <link rel="stylesheet" href="style.css">
+    <!-- base标签: 对页面上的所有链接规定默认引用地址
+    通常情况下，浏览器会从当前文档的URL中提取相应的元素    
+    使用 <base> 标签可以改变这一点。浏览器随后将不再使用当前文档的 URL，而使用指定的base基本 URL 来解析所有的相对 URL。
+    这其中包括 <a>、<img>、<link>、<form> 标签中的 URL。 -->
+    <!-- 兼容性: 所有浏览器都支持base标签 -->
+    <!-- <base>标签全局属性(target属性)是针对所有没有设置该属性(target属性)的<a>、<img>、<link>、<form>标签起作用 -->
+    <!-- <base href="" target="_blank"> -->
 </header>
 <body>
     <!-- 1~6, 1的字体大, 标题层级高 -->
@@ -293,7 +300,9 @@
         <!-- 兼容性: IE 8 以及更早的版本不支持 <audio> 标签 -->
         <video src="https://www.w3school.com.cn/i/movie.ogg" controls="controls">
             这是一段视频播放
-        </video>
+        </video><br>
+        <!-- bdo标签, 定义文本的方向, dir的枚举值: rtl是right to left, ltr是left to right的方向属性值 -->
+        <bdo dir="rtl">Here is some text</bdo>
     </p>
 </body>
 </html>
