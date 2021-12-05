@@ -123,11 +123,50 @@ ol li {
   color: green;
 }
 
-/* 子选择器, 选择层级高的子元素, 孙元素不选择 */
+/* 子选择器---选择层级高的子元素, 孙元素不选择 */
 /* 语法格式 元素1>元素2 {样式}
     元素1和元素2中间用>隔开
     可以嵌套多层*/
 .nav > li > a {
   /* nav类中的li中的第一个a标签, 而不是所有的a标签 */
   color: blue;
+}
+
+/* 并集选择器---可以选择多组标签, 同时为这多组元素定义样式 
+               通常用于集体声明 */
+/* 并集选择器元素选择之间用逗号隔开, 任何形式选择器都可以作为元素 */
+.font_10,
+.nav li a {
+  /* font_10类和nav类下的所有li下的所有a标签都变成粉色字体 */
+  color: pink;
+}
+
+/* 伪类选择器---对某些选择器添加特殊效果, 有许多种类型, 就像是给元素增加了在不同场景下的状态样式 */
+/* 链接伪类选择器
+  必须根据LVHA顺序进行书写才能确保生效, link visited hover active
+  记忆法: Love Hate或者LV包包hao
+  实际工作中需要对a标签单独指定样式, 常用设置是hover
+*/
+a:link {
+  /* a:link 选择所有未被方为访问的链接 */
+  color: #333;
+  text-decoration: none;
+}
+a:visited {
+  /* a:visited 选择所有已被访问的链接 */
+  color: orange;
+}
+a:hover {
+  /* a:hover 选择鼠标指针位于其上的链接 */
+  color: royalblue;
+}
+a:active {
+  /* a:active 选择活动链接(鼠标按下未弹起的链接) */
+  color: green;
+}
+
+/* focus伪类选择器, 用于选取获取焦点的表单元素, 焦点就是光标(鼠标)
+focus主要针对表单元素 */
+input:focus {
+  background-color: yellow;
 }
