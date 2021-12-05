@@ -302,7 +302,22 @@
             这是一段视频播放
         </video><br>
         <!-- bdo标签, 定义文本的方向, dir的枚举值: rtl是right to left, ltr是left to right的方向属性值 -->
-        <bdo dir="rtl">Here is some text</bdo>
+        <bdo dir="rtl">Here is some text</bdo><br>
+        <!-- <blockquote> 标签定义块引用, <blockquote> 与 </blockquote> 之间的所有文本都会从常规文本中分离出来
+        经常会在左、右两边进行缩进(增加外边距),而且有时会使用斜体
+        也就是说, 块引用拥有它们自己的空间 -->
+        <!-- 兼容性: 所有都支持blockquote标签, 没有浏览器能够正确地显示cite属性 -->
+        Here comes a long quotation:<br>
+        <blockquote>
+        This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation. This is a long quotation.
+        </blockquote>
+        <!-- <button>标签,和input的buton类型的区别:
+        button 元素内部, 可以放置内容, 比如文本或图像, 提供了更为强大的功能和更丰富的内容
+        但是如果需要提交表单内容, 必须使用input的button类型
+        因为IE将提交 <button> 与 </button> 之间的文本，而其他浏览器将提交value属性的内容 -->
+        <!-- 重要!!! 终为button标签规定 type 属性
+            IE的默认类型是 "button"，而其他浏览器中（包括 W3C 规范）的默认值是 "submit" -->
+        <button type="button" autofocus="autofocus">Click Me!</button>
     </p>
 </body>
 </html>
