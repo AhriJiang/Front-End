@@ -199,3 +199,24 @@ html元素一般分为两种类型: 块元素, 行内元素 */
     1. 和相邻行内元素在一行上, 但是他们之间会有空白间隙, 一行可显示多个(行元素特征)
     2. 默认宽度就是它本身内容的宽度(行元素特征)
     3. 高度, 行高, 内外边距都可以控制(块元素特征) */
+
+/* 元素显示模式转换 */
+.line_to_block {
+  /* a标签的class是.line_to_block */
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  /* display:block,将行内元素a转换为块元素显示 */
+  display: block;
+  /* display: inline-block,将行内元素a转换为行内块元素显示 */
+  /* display: inline-block; */
+}
+
+.block_t0_line {
+  /* div标签的class是.line_to_block */
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  /* display:inline,将块级元素div转换为行内元素 */
+  display: inline;
+}

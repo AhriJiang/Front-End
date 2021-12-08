@@ -318,6 +318,21 @@
         <!-- 重要!!! 终为button标签规定 type 属性
             IE的默认类型是 "button"，而其他浏览器中（包括 W3C 规范）的默认值是 "submit" -->
         <button type="button" autofocus="autofocus">Click Me!</button>
+        <!-- button属性
+            autofocus="autofocus", 是的button在加载的时候就获得焦点(自动被选中)
+            disabled="disabled", 禁用不可使用
+            form="form_name", 定义这个button属于哪个form
+            formaction, 覆盖form元素的action属性, 配合type="submit"属性使用
+            formenctype 属性可能的值：(配合type="submit"属性使用)
+                application/x-www-form-urlencoded
+                multipart/form-data
+                text/plain
+            formmethod, get/post 覆盖form元素的method属性, 配合type="submit"属性使用
+            formnovalidate="formnovalidate", 覆盖form元素的novalidate属性(不验证提交值是否是邮箱等)
+            formtarget,覆盖form元素的target属性, 配合type="submit"属性使用
+            type="button/reset/submit",规定按钮的类型
+            name="button_name",规定按钮的名称
+            value,规定按钮的初始值。可由脚本进行修改 -->
     </p>
 </body>
 </html>
