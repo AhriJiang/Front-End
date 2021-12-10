@@ -222,3 +222,29 @@ html元素一般分为两种类型: 块元素, 行内元素 */
 }
 
 /* 文本垂直居中的技巧, 让文字的行高等于盒子的行高 */
+
+/* 背景css样式 */
+.background_css {
+  /* 背景颜色 background-color, 默认值 transparent(透明的) */
+  /* 可以同时设置背景颜色和背景图片, 图片图层在背景颜色上方 */
+  background-color: transparent;
+  /* 背景图片, 经常用于logo或者装饰性图片,超大背景图片, 默认平铺
+      非常便于控制位置, 使用url()指定相对或绝对路径 */
+  background-image: url(./images/pic.jpeg);
+  /* background-repeat 默认值是repeat, 平铺 */
+  background-repeat: repeat;
+  /* no-repeat 不平铺 */
+  background-repeat: no-repeat;
+  /* repeat-x 横向平铺 */
+  background-repeat: repeat-x;
+  /* repeat-y 纵向平铺 */
+  background-repeat: repeat-y;
+  /* background-position 定义图片在盒子中的位置, 可以用x y 百分比,或单位标示符
+  或者方位名词 top bottom center top left right */
+  /* center center 标示x y都居中 */
+  background-position: center center;
+  /* right top 标示x y右上方对齐 */
+  background-position: right top;
+  /* 只写一个方位, 另一个默认居中对齐 */
+  background-position: right;
+}
