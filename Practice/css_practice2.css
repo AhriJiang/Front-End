@@ -1,0 +1,14 @@
+a {
+  font: normal 16px/3em "Microsoft Yahei";
+  color: white;
+  background-color: gray;
+  text-decoration: none;
+  display: block;
+  width: 300px;
+  height: 48px;
+  text-indent: 2em;
+}
+
+a:hover {
+  background-color: orange;
+}
