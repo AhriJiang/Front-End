@@ -7,6 +7,11 @@ CSS 是一种标记语言
 使得HTML结构和CSS样式相分离
 一般写在header的style标签里面 */
 
+/* CSS 三大特性
+1. 层叠性---就近原则, 对同一个标签来说, 距离更近的css才会生效
+2. 继承性---子承父业, 内部的标签会继承外部标签的属性, 多数是font, line, text的属性, 边距不会继承
+3. 优先级 */
+
 /* CSS的作用域, 非常重要!!!
 
 样式优先级(内联样式的优先级最高)
@@ -254,4 +259,6 @@ html元素一般分为两种类型: 块元素, 行内元素 */
   background-attachment: fixed;
   /* background 复合属性写法, 没有固定的顺序 */
   background: #fff no-repeat center 40px url(./images/pic.jpeg);
+  /* rgba透明度调整, .3相当于0.3=30%透明度 */
+  background: rgba(0, 0, 0, 0.3);
 }
