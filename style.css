@@ -269,3 +269,27 @@ html元素一般分为两种类型: 块元素, 行内元素 */
   /* rgba透明度调整, .3相当于0.3=30%透明度 */
   background: rgba(0, 0, 0, 0.3);
 }
+
+/* 
+网页布局三大核心, 盒子模型, 浮动和定位
+网页布局过程
+1. 准备好元素,基本都是盒子
+2. (核心步骤)利用CSS设置好盒子的样式, 摆放到相应的位置
+3. 向盒子里面装内容 */
+
+/* 盒子模型本质上是一个盒子, 封装周围的元素
+包括边框(boarder), 外边距(margin), 内边距(padding)和实际内容(content) */
+
+/* boarder可以设置元素的边框, 三个属性: 粗细, 样式和颜色 */
+.boarder_css {
+  /* 边框颜色 */
+  border-color: royalblue;
+  /* 边框宽度 */
+  border-width: 3px;
+  /* 边框样式, dotted是点线, solid是实线, dashed是虚线 */
+  border-style: dotted;
+  /* 复合写法,无顺序 */
+  border: 3px royalblue dashed;
+  /* border包括了4条边
+  border-left 左边框 border-right 右边框 border-top 上边框 border-bottom: 下边框; */
+}
